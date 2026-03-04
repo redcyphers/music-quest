@@ -544,7 +544,7 @@ function showBossIntro(idx,cb){const b=BOSSES[idx];const div=document.createElem
 function startGame(){
   started=true;curQ=0;pHP=999;
   initAudioCtx();playMusic('title');
-  setTimeout(()=>{showScr('battle',()=>{initBattle();drawBattleFrame();startBoss(0);});},5000);
+  setTimeout(()=>{showScr('battle',()=>{initBattle();drawBattleFrame();startBoss(0);});},4500);
 }
 function startBoss(idx){
   curBoss=idx;const b=BOSSES[idx];bMaxHP=b.hp;bHP=b.hp;
